@@ -1,0 +1,25 @@
+{
+  "profile": {
+    "name": "Alex Morgan",
+    "title": "Product Designer & Frontend Developer",
+    "tagline": "Merancang pengalaman digital yang terasa sederhana.",
+    "photo": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=900&q=85",
+    "about": "Saya adalah product designer dan frontend developer yang senang berada di persimpangan antara empati, strategi, dan teknologi. Selama lebih dari enam tahun, saya bekerja bersama startup dan perusahaan bertumbuh untuk membuat produk yang tidak hanya terlihat baik, tetapi juga bekerja dengan baik.",
+    "cvLink": "https://example.com/alex-morgan-cv.pdf",
+    "socials": [{"name": "LinkedIn", "url": "https://linkedin.com", "icon": "fa-brands fa-linkedin-in"}, {"name": "GitHub", "url": "https://github.com", "icon": "fa-brands fa-github"}, {"name": "Dribbble", "url": "https://dribbble.com", "icon": "fa-brands fa-dribbble"}]
+  },
+  "skills": {
+    "frontend": [{"name": "HTML & CSS", "level": 96}, {"name": "JavaScript", "level": 90}, {"name": "Responsive Design", "level": 94}],
+    "backend": [{"name": "Node.js", "level": 76}, {"name": "REST API", "level": 82}, {"name": "Database", "level": 72}],
+    "tools": [{"name": "Figma", "level": 95}, {"name": "Git & GitHub", "level": 88}, {"name": "Notion", "level": 91}]
+  },
+  "projects": [
+    {"id": 1, "title": "Nusa Finance", "category": "Product", "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=85", "description": "Mendesain ulang pengalaman finansial personal untuk membantu generasi muda membangun kebiasaan uang yang lebih sehat melalui insight yang sederhana dan actionable.", "tech": ["Product strategy", "UX research", "UI design"], "demoUrl": "https://example.com", "repoUrl": "https://github.com"},
+    {"id": 2, "title": "Atlas Commerce", "category": "Web Design", "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1000&q=85", "description": "Platform commerce modular dengan fokus pada storytelling brand, discovery produk, dan checkout yang minim friksi.", "tech": ["Art direction", "Design system", "Prototyping"], "demoUrl": "https://example.com", "repoUrl": "https://github.com"},
+    {"id": 3, "title": "Sora Wellness", "category": "Mobile", "image": "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1000&q=85", "description": "Aplikasi wellness yang membuat rutinitas perawatan diri lebih personal dengan rekomendasi yang tenang dan tidak menghakimi.", "tech": ["Mobile UX", "Interaction", "User testing"], "demoUrl": "https://example.com", "repoUrl": "https://github.com"},
+    {"id": 4, "title": "Lumen Studio", "category": "Frontend", "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85", "description": "Website studio kreatif yang hidup lewat sistem layout editorial, motion ringan, dan tipografi ekspresif.", "tech": ["HTML", "CSS", "JavaScript"], "demoUrl": "https://example.com", "repoUrl": "https://github.com"}
+  ],
+  "experience": [{"year": "2022 — Sekarang", "title": "Lead Product Designer", "company": "Northstar Labs", "description": "Memimpin arah desain untuk produk SaaS yang digunakan lebih dari 40.000 pengguna."}, {"year": "2020 — 2022", "title": "Product Designer", "company": "Good Habit Co.", "description": "Mengubah insight riset menjadi pengalaman mobile yang meningkatkan retensi pengguna."}, {"year": "2018 — 2020", "title": "Frontend Developer", "company": "Karsa Digital", "description": "Membangun website dan design system untuk berbagai brand lokal."}],
+  "education": [{"year": "2014 — 2018", "degree": "S1 Desain Komunikasi Visual", "school": "Institut Teknologi Bandung", "description": "Fokus pada desain interaksi dan komunikasi visual."}, {"year": "2023", "degree": "Advanced Product Strategy", "school": "IDEO U", "description": "Program sertifikasi tentang strategi inovasi dan human-centered design."}],
+  "contact": {"email": "hello@alexmorgan.studio", "phone": "+62 812 3456 7890", "location": "Bandung, Indonesia"}
+}
