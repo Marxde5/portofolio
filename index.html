@@ -1,1 +1,68 @@
-Hello
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi Alex Morgan, product designer dan frontend developer.">
+  <meta name="theme-color" content="#0f172a">
+  <title>Alex Morgan | Product Designer & Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-label="Memuat halaman" role="status">
+    <div class="loader-mark"><span></span><span></span><span></span></div>
+    <p>Menyiapkan portofolio</p>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="Kembali ke beranda"><span class="brand-mark">A</span><span>alex<span class="text-gradient">.studio</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mainMenu"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-menu" id="mainMenu">
+        <a href="#about">Tentang</a><a href="#skills">Keahlian</a><a href="#projects">Proyek</a><a href="#journey">Perjalanan</a><a href="#contact" class="nav-cta">Hubungi saya <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema" title="Ganti tema"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Available for selected projects</p>
+          <h1>Membuat produk digital yang <span class="text-gradient">berarti.</span></h1>
+          <p class="hero-lead"><span id="typedText"></span><span class="cursor" aria-hidden="true">|</span></p>
+          <p class="hero-description">Saya membantu brand dan tim produk mengubah masalah kompleks menjadi pengalaman digital yang jernih, hangat, dan berdampak.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">Lihat karya saya <i class="fa-solid fa-arrow-right"></i></a><a class="button button-ghost" id="cvButton" href="#" target="_blank" rel="noopener">Unduh CV <i class="fa-solid fa-download"></i></a></div>
+          <div class="social-links" id="socialLinks" aria-label="Media sosial"></div>
+        </div>
+        <div class="hero-visual reveal reveal-delay">
+          <div class="portrait-frame"><div class="portrait-orbit orbit-one"></div><div class="portrait-orbit orbit-two"></div><img id="profilePhoto" src="" alt="Foto profil" fetchpriority="high"><div class="portrait-badge"><strong>6+</strong><span>Tahun berkarya</span></div></div>
+          <div class="floating-note note-top"><i class="fa-solid fa-sparkles"></i><span>Design with<br><strong>intention</strong></span></div>
+          <div class="floating-note note-bottom"><span class="mini-avatar">AM</span><span>Open to<br><strong>collaborate</strong></span></div>
+        </div>
+      </div>
+      <div class="scroll-hint"><span>Scroll untuk eksplorasi</span><i class="fa-solid fa-arrow-down"></i></div>
+    </section>
+
+    <section class="section section-soft" id="about"><div class="container about-grid"><div class="section-intro reveal"><p class="eyebrow">01 / Tentang saya</p><h2>Memadukan rasa ingin tahu dengan <span class="text-gradient">ketelitian.</span></h2></div><div class="about-content reveal reveal-delay"><p class="about-text" id="aboutText"></p><div class="stats-grid" id="statsGrid"></div></div></div></section>
+
+    <section class="section" id="skills"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">02 / Keahlian</p><h2>Tools untuk ide yang <span class="text-gradient">bergerak.</span></h2></div><p class="section-note">Kemampuan yang saya gunakan untuk merancang, membangun, dan menyempurnakan produk.</p></div><div class="skills-grid" id="skillsGrid"></div></div></section>
+
+    <section class="section section-soft" id="projects"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">03 / Karya pilihan</p><h2>Beberapa hal yang pernah <span class="text-gradient">saya buat.</span></h2></div><div class="filter-tabs" id="projectFilters" role="tablist" aria-label="Filter proyek"></div></div><div class="projects-grid" id="projectsGrid"></div></div></section>
+
+    <section class="section" id="journey"><div class="container journey-grid"><div class="section-intro reveal"><p class="eyebrow">04 / Perjalanan</p><h2>Belajar dari setiap <span class="text-gradient">persinggahan.</span></h2><p class="section-note">Setiap peran memberi perspektif baru tentang bagaimana teknologi bisa terasa lebih manusiawi.</p></div><div class="timeline-wrap reveal reveal-delay"><div class="timeline-column"><h3><i class="fa-solid fa-briefcase"></i> Pengalaman</h3><div class="timeline" id="experienceTimeline"></div></div><div class="timeline-column"><h3><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h3><div class="timeline" id="educationTimeline"></div></div></div></div></section>
+
+    <section class="section contact-section" id="contact"><div class="container contact-grid"><div class="contact-copy reveal"><p class="eyebrow">05 / Mari terhubung</p><h2>Punya ide yang ingin <span class="text-gradient">diwujudkan?</span></h2><p>Saya selalu terbuka untuk percakapan tentang produk, kolaborasi, atau sekadar bertukar perspektif.</p><div class="contact-details" id="contactDetails"></div></div><form class="contact-form reveal reveal-delay" id="contactForm" novalidate><div class="form-row"><label>Nama <input type="text" name="name" autocomplete="name" placeholder="Nama lengkap"><small class="error-message"></small></label><label>Email <input type="email" name="email" autocomplete="email" placeholder="nama@email.com"><small class="error-message"></small></label></div><label>Pesan <textarea name="message" rows="5" placeholder="Ceritakan sedikit tentang proyekmu..."></textarea><small class="error-message"></small></label><button class="button button-primary" type="submit">Kirim pesan <i class="fa-solid fa-paper-plane"></i></button><p class="form-status" id="formStatus" role="status"></p></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">A</span><span>alex<span class="text-gradient">.studio</span></span></a><p id="copyright"></p><a class="back-to-top" href="#top" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></a></div></footer>
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="modal-content"><button class="modal-close" data-close-modal aria-label="Tutup detail proyek"><i class="fa-solid fa-xmark"></i></button><img id="modalImage" src="" alt=""><div class="modal-body"><p class="eyebrow" id="modalCategory"></p><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-tech" id="modalTech"></div><div class="modal-actions"><a class="button button-primary" id="modalDemo" href="#" target="_blank" rel="noopener">Lihat demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a class="button button-ghost" id="modalRepo" href="#" target="_blank" rel="noopener">Lihat repository <i class="fa-brands fa-github"></i></a></div></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
